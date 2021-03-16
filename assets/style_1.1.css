@@ -1,0 +1,249 @@
+
+/*
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  Section 0 : Set CSS class for all
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+@font-face {
+      font-family: ThaiSansNeue;
+      src: url(fonts/ThaiSansNeue-Bold.ttf);
+    }
+    @font-face {
+      font-family: Prompt;
+      src: url(../assets/fonts/Prompt-Bold.ttf);
+      
+    }
+    @font-face {
+      font-family: Prompt-italic;
+      src: url(../assets/fonts/Prompt-BoldItalic.ttf);
+    }
+
+    /*ชุด CSS พิเศษสำหรับหน้า Salepage*/
+      h1{font-family: Prompt;font-size:36px;color:#000000;}
+      h2{font-family: Prompt-italic;font-size:46px;color:#000000;}
+      p{font-family: Prompt;font-size:24px;color:#000000;}
+      .redtextforsale{color:#ba0a34;}
+      .orangetextforsale{color:#ff870e;}
+      .graytextforsale{color:#86868b;}
+      .yellowtextforsale{color:#c1b101;}
+      .pinktextforsale{color:#ff7091;}
+      .textforsale{font-size:30px;}
+      .divcontent{padding:20px;}
+      .biggerfont{font-size:100px;}
+      .col-md-6{padding: 0;}
+
+
+      a,body{font-family: ThaiSansNeue;font-size:24px;color:#000000;}
+      html, body {width: auto!important; overflow-x: hidden!important} 
+
+      dd { 
+            display: block;
+            margin-left: 40px;
+          }
+
+/*ล็อคขนาดรูปเครือข่าย*/
+      .nav-link-image {height: 100px;}
+/*สี bg แท็บชื่อเครือข่าย*/
+      .greenbg{background-color: #A93CC7; text-align: center; padding:10px 10px;}
+      .redbg{background-color: #FF3300; text-align: center; padding:10px 10px;}
+      .bluebg{background-color: #3366CC; text-align: center; padding:10px 10px;}
+/* สีปุ่มไล่สี*/
+      .btGreenbg{border-radius: 15px;background-image: -webkit-linear-gradient( -90deg, rgb(169, 60, 199) 0%, rgb(152, 54, 179) 56%, rgb(135, 48, 159) 100%);}
+      .btRedbg{border-radius: 15px;background-image: -webkit-linear-gradient( -90deg, rgb(255,0,0) 0%, rgb(201,48,48) 56%, rgb(184,57,57) 100%)}
+      .btBluebg{border-radius: 15px;background-image: -webkit-linear-gradient( -90deg, rgb(51, 102, 204) 0%, rgb(45, 91, 183) 56%, rgb(40, 81, 163) 100%)}
+/*เปลี่ยนสีเงากล่องรายการ*/
+      .shadowGreen{box-shadow: 0px 1px 10px 2.16px rgba(169, 60, 199, 0.25);}
+      .shadowRed{box-shadow: 0px 1px 10px 2.16px rgba(255, 51, 0, 0.25);}
+      .shadowBlue{box-shadow: 0px 1px 10px 2.16px rgba(51, 102, 204, 0.25);}
+/*สี bg Instruction ของแต่ละเครือข่าย*/
+      .greenIns{background-color: #996666; padding:10px 10px;}
+      .redIns{background-color: #e65e3d; padding:10px 10px;}
+      .blueIns{background-color: #5e8deb; padding:10px 10px; }
+/*ระยะห่าง*/
+      .paddingdiv{padding: 15px 15px;}
+      .margindiv{margin: 5px 5%}
+/*row สำหรับ Ins เพราะ row ปกติ มันจัดกึ่งกลางไม่ได้*/
+.rowforins {display: -ms-flexbox;display: inherit;}
+/*rowforbox สำหรับกล่องย่อย ให้ไม่ถูกลดขนาดตอนมากกว่า 1200px*/
+.rowforbox {display: -ms-flexbox;display: flex;flex-wrap: wrap;}
+/*กรอบสีต่างๆ*/
+.greenbox {background-color:  rgba(169, 60, 199, 0.2);}
+.darkgreenbox {background-color:  rgba(169, 60, 199, 0.5);}
+/*สีตัวหนังสือ*/
+      .greentext{color:#9b4747;;font-weight: bold;font-size:26px;}
+      .whitetext{color:#ffffff;font-weight: bold;font-size:18px;}
+      .redtext{color:#d62128;font-weight: bold;font-size:26px;}
+      .bluetext{color:#3366CC;font-weight: bold;font-size:26px;}
+      .blacktext{color:#000000;font-weight: bold;font-size:26px;}
+      .orangetext{color:#FF6600;font-weight: bold;font-size:18px;}
+      .graytext {color:#708090;font-size:20px;}
+/* ตัวหนังสือใหญ่สำหรับเลือกซิมเท่านั้น*/
+.blacktextsim{font-weight: bold;font-size:40px;}
+/*ขีดเส้นใต้สำหรับ active เมนูต่างๆ*/
+      .Linered {border-bottom: 5px solid #d62128;}
+      .Linegreen {border-bottom: 5px solid #996666;}
+      .Lineblue {border-bottom: 5px solid #3366CC;}
+      .underlinedot {border-bottom: 2px dashed #8c8b8b;}
+/*เมื่อชี้จะเปลี่ยนสี*/
+      .changetored{}
+      .changetogreen{}
+      .changetoblue{}
+      a.changetored:hover {color:#d62128;}
+      a.changetogreen:hover {color:#996666;}
+      a.changetoblue:hover {color:#3366CC;}
+/*ชิดซ้าย หรือขวา*/
+      .left{text-align: left;}
+      .right{text-align: right;}
+/*เส้นคั่นระหว่างรายละเอียดและเบอร์กดสมัคร*/
+      .redline {border-bottom: 1px solid #d62128; width:auto;margin: auto;}
+      .greenline {border-bottom: 1px solid #996666; width:auto;margin: auto;}
+      .blueline {border-bottom: 1px solid #3366CC; width:auto;margin: auto;}
+/*คลาสที่ทำให้แต่ละ div ของชื่อเครือข่าย ไม่ลงบรรทัดใหม่เมื่อย่อขนาดจอ*/
+      .nav-item-header {width: 33.33%;margin-left: 0;}
+/*คลาสที่ทำให้แต่ละ div ประเภทลูกค้าไม่ลงบรรทัดใหม่เมื่อย่อขนาดจอ*/
+      .nav-item {width: 33.3%;padding: 0.5rem 0;}
+/*คลาสที่ทำให้แต่ละ div รายการโปรเสริมไม่ลงบรรทัดใหม่เมื่อย่อขนาดจอ*/
+      .nav-content {width:75%;padding: 15px 0px 15px 15px}
+/*คลาสที่ทำให้แต่ละ ปุ่มกดสมัครไม่ลงบรรทัดใหม่เมื่อย่อขนาดจอ*/
+      .nav-button {width:25%;padding: 80px 15px 15px 0px}
+/*ทำให้กรอบเบอร์โทรมีระยะห่างต่อกัน*/
+.choosenumber {margin: 3% 0%;}
+/*margin ของ FAQ*/
+.marginfaq {margin: 5px 0px;}
+/*ก๊อปเขามา ทำให้รายการเป็นกรอบสีขาว*/
+      .promotion-fullwhite {
+      margin: 3% auto;
+      padding: 1rem 0;
+      }
+      .text-center {
+      text-align: center !important;
+      }
+      .item-center {
+            text-align: center !important;
+            align-items: center;
+            }
+
+      .item-centernoline {
+            text-align: center !important;
+            align-items: center;
+            }
+      .item-centerforchoosesim{
+            text-align: center !important;
+            border-left: 1px solid gray;
+      }
+      .whitebox {
+      background-color:  rgba(255, 255, 255, 0.9) !important;
+      }
+      .center {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+          }
+
+/*เมื่อเอาเมาส์ชี้สีจะจางลง*/
+.effectfront {
+      opacity: 100%;
+      border: none;
+      margin: 0 auto;
+    }
+    .effectfront:hover {
+      opacity: 0.5;
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+    }
+
+/*ปรับขนาดรูปภาพใน collapse*/
+@media only screen and (min-width: 1201px){
+  .imgcollapse{width:600px;border:black 1px solid;}
+  .imgsimmodel{width:300px;}
+  .imgsimmodel2{width:300px;}
+  .imgsim{width:800px;}
+  .imgsalepage{width:700px;}
+  .redline,.greenline,.blueline{visibility: hidden;}
+  .item-center {border-left: 1px solid gray;}
+  .row,.rowforins {margin: 0 25%;}
+  .rowforchoosesim {margin: 0 10%;}
+  .promotion-fullwhite {margin: 3% 25%;}
+/* ตัวหนังสือใหญ่สำหรับสั่งซื้อซิมเท่านั้น*/
+.whitetextsim{color:#ffffff;font-weight: bold;font-size:120px;}
+.msgicon{width: 150px;}
+}
+@media only screen and (max-width: 1200px) and (min-width: 993px){
+  .imgcollapse{width:600px;border:black 1px solid;}
+  .imgsimmodel{width:300px;}
+  .imgsimmodel2{width:300px;}
+  .imgsim{width:800px;}
+  .imgsalepage{width:800px;}
+  .redline,.greenline,.blueline{visibility: hidden;}
+  .item-center {border-left: 1px solid gray;}
+  /* ตัวหนังสือใหญ่สำหรับสั่งซื้อซิมเท่านั้น*/
+.whitetextsim{color:#ffffff;font-weight: bold;font-size:100px;}
+
+.textforsale{font-size:22px;}
+.col-md-6{max-width: 100%;}
+.msgicon{width: 100px;}
+}
+
+
+@media only screen and (max-width: 992px) and (min-width: 769px){
+  .imgcollapse{width:500px;border:black 1px solid;}
+  .imgsimmodel{width:350px;}
+  .imgsimmodel2{width:250px;}
+  .imgsim{width:700px;}
+  .imgsalepage{width:700px;}
+  .item-center {border-left: 1px solid gray;}
+  .redline,.greenline,.blueline{visibility: hidden;}
+  .whitetext{color:#ffffff;font-weight: bold;font-size:15px;}
+  /* ตัวหนังสือใหญ่สำหรับสั่งซื้อซิมเท่านั้น*/
+.whitetextsim{color:#ffffff;font-weight: bold;font-size:80px;}
+
+.divcontent{padding:20px;}
+.biggerfont{font-size:80px;}
+.col-md-6{max-width: 100%;}
+.msgicon{width: 80px;}
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 601px) {
+  .imgcollapse{width:400px;border:black 1px solid;}
+  .imgsimmodel{width:250px;}
+  .imgsim{width:500px;}
+  .imgsalepage{width:600px;}
+  .imgsimmodel2{width:200px;}
+  .col-sm-6{width:50%;}
+  .redline,.greenline,.blueline{visibility: hidden;}
+  /* ตัวหนังสือใหญ่สำหรับสั่งซื้อซิมเท่านั้น*/
+.whitetextsim{color:#ffffff;font-weight: bold;font-size:60px;}
+
+h1{font-family: Prompt;font-size:30px;color:#000000;}
+h2{font-family: Prompt-italic;font-size:30px;color:#000000;}
+p{font-family: Prompt;font-size:22px;color:#000000;}
+.textforsale{font-size:24px;}
+.divcontent{padding:20px;}
+.biggerfont{font-size:60px;}
+.col-md-6{max-width: 100%;}
+.msgicon{width: 70px;}
+
+}
+@media only screen and (max-width: 600px){
+  .imgcollapse{width:300px;border:black 1px solid;}
+  .imgsimmodel{width:150px;}
+  .imgsimmodel2{width:130px;}
+  .imgsim{width:400px;}
+  .imgsalepage{width:400px;}
+  .col-sm-4{width:33.3%;}
+  .col-sm-6{width:50%;}
+  .redline,.greenline,.blueline{visibility: visible;}
+  /* ตัวหนังสือใหญ่สำหรับสั่งซื้อซิมเท่านั้น*/
+.whitetextsim{color:#ffffff;font-weight: bold;font-size:40px;}
+
+h1{font-family: Prompt;font-size:26px;color:#000000;}
+h2{font-family: Prompt-italic;font-size:24px;color:#000000;}
+p{font-family: Prompt;font-size:18px;color:#000000;}
+.textforsale{font-size:20px;}
+.biggerfont{font-size:42px;}
+.col-md-6{max-width: 100%;}
+.msgicon{width: 50px;}
+}
