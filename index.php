@@ -1,20 +1,16 @@
 <html>
-
-
-<?php include 'assets/header.php';?>
-
-  <body background="/img/bgsim.jpg" style="background-size: 100%;">
-<?php
-include WEB_ROOTDIR.'/assets/connection.php';
-include WEB_ROOTDIR.'/assets/php_header.php';
-
-
+<?php 
+  include 'assets/header.php';
+  include './assets/connection.php';
+  include './assets/php_header.php';
 ?>
+
 <!--
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   Section 1 : Head Section
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
+<body background="<?php echo $folder; ?>img/bgsim.jpg" style="background-size: 100%;">
 <!--
 /////////////////////////////////////////////////////////////////
 Section 1.0 : Main Tab Logo
@@ -29,7 +25,7 @@ Section 1.0 : Main Tab Logo
                 $vendor1_2 = $resultvendor1['Type_Vendor_Color'];
         ?>
             <div class="col-md-4 paddingdiv nav-item-header" >
-                 <a href="#" onclick="MainTab<?php echo $vendor1?>()"><img class="nav-link-image" src="img/logo_app_<?php echo $vendor1?>.png"></a>
+                 <a href="#" onclick="MainTab<?php echo $vendor1?>()"><img class="nav-link-image" src="<?php echo $folder; ?>img/logo_app_<?php echo $vendor1?>.png"></a>
                  <div class="paddingdiv Line<?php echo $vendor1_2?>" id="LineMainTab<?php echo $vendor1?>"></div>
             </div>
             <?php }?>
@@ -74,15 +70,15 @@ Section 1.3 : Type Tab
             ?>
               <div class="row paddingdiv" align="center" id="TypeTab<?php echo $vendor3?>">
               <div class="col-md-4 paddingdiv nav-item">
-                   <a href="#" class="changeto<?php echo $vendor3_2?>" onclick="TypeTab<?php echo $vendor3?>1()">ลูกค้าใหม่<br><font size="4">(ไม่ลดสปีด+โทรฟรี)</font></a>
+                   <a href="#" class="changeto<?php echo $vendor3_2?>" onclick="TypeTab<?php echo $vendor3?>1()"><span class="bold">ลูกค้าใหม่</span><br><font class="remarktype">(ไม่ลดสปีด+โทรฟรี)</font></a>
                    <div class="Line<?php echo $vendor3_2?>" id="LineTypeTab<?php echo $vendor3?>1"></div>
               </div>
               <div class="col-md-4 paddingdiv nav-item">
-                   <a href="#" class="changeto<?php echo $vendor3_2?>" onclick="Typetab<?php echo $vendor3?>2()">ลูกค้าเก่า<br><font size="4">(ไม่ลดสปีด)</font></a>
+                   <a href="#" class="changeto<?php echo $vendor3_2?>" onclick="Typetab<?php echo $vendor3?>2()"><span class="bold">ลูกค้าเก่า</span><br><font class="remarktype">(ไม่ลดสปีด)</font></a>
                    <div class="Line<?php echo $vendor3_2?>" id="LineTypeTab<?php echo $vendor3?>2"></div>
               </div>
               <div class="col-md-4 paddingdiv nav-item">
-                   <a href="#" class="changeto<?php echo $vendor3_2?>" onclick="Typetab<?php echo $vendor3?>3()">ลูกค้าเก่า<br><font size="4">(ไม่ลดสปีด+โทรฟรี)</font></a>
+                   <a href="#" class="changeto<?php echo $vendor3_2?>" onclick="Typetab<?php echo $vendor3?>3()"><span class="bold">ลูกค้าเก่า</span><br><font class="remarktype">(ไม่ลดสปีด+โทรฟรี)</font></a>
                    <div class="Line<?php echo $vendor3_2?>" id="LineTypeTab<?php echo $vendor3?>3"></div>
               </div>
           </div>
@@ -183,22 +179,30 @@ Section 1.5 : Day Tab
             while(${"result".$vendor6.$Order[$i]}=mysqli_fetch_array(${"query".$vendor6.$Order[$i]},MYSQLI_ASSOC)){ 
           ?>
             <div class="row promotion-fullwhite shadow<?php echo $resultvendor6['Type_Vendor_Color'];?> whitebox">
-              <div class="col-md-4 text-center">
-                  <div class="center"><font class="<?php echo $resultvendor6['Type_Vendor_Color'];?>text">
-                    <?php echo ${"result".$vendor6.$Order[$i]}['VAT']?> บาท  
-                    | <?php echo ${"result".$vendor6.$Order[$i]}['Time']?> วัน </font>
-                    <br>(ราคารวมภาษีแล้ว) 
+              <div class="col-md-2 text-center">
+                  <div class="center">
+                    <?php echo ${"result".$vendor6.$Order[$i]}['VAT']?> บาท 
                   </div>
-                  <hr class="<?php echo $resultvendor6['Type_Vendor_Color'];?>line">
+                  
               </div>
-              <div class="col-md-4 text-center item-center">
-                <div class="center">อินเทอร์เน็ต 5G/4G <br><font class="<?php echo $resultvendor6['Type_Vendor_Color'];?>text">เน็ตความเร็ว <?php echo ${'result'.$vendor6.$Order[$i]}['Speed'];?></font><br><?php echo ${"result".$vendor6.$Order[$i]}['Type_Speed']?></div>
-                <hr class="<?php echo $resultvendor6['Type_Vendor_Color'];?>line">
+              <div class="col-md-1 text-center">
+                  <div class="center">
+                    <?php echo ${"result".$vendor6.$Order[$i]}['Time']?> วัน</div>
               </div>
-                
-                <div class="col-md-4 item-center">
-                  <br><a href="tel:<?php echo ${"result".$vendor6.$Order[$i]}['Number']?>" class="btn btn-md bt<?php echo $resultvendor6['Type_Vendor_Color'];?>bg whitetext">กด <?php echo ${"result".$vendor6.$Order[$i]}['Number']?> <img width="16px" src="img/phone_sign.png"></a>
-                  <br><br><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample<?php echo ${"result".$vendor6.$Order[$i]}['ID']?>" aria-expanded="false" aria-controls="collapseExample<?php echo ${"result".$vendor6.$Order[$i]}['ID']?>">รูปภาพ</button>
+              <div class="col-md-2 text-center">
+                  <div class="center">
+                    <font class="<?php echo $resultvendor6['Type_Vendor_Color'];?>text"> <?php echo ${"result".$vendor6.$Order[$i]}['Speed']?> </font>
+                  </div>
+                  
+              </div>
+              <div class="col-lg-2 text-center">
+                    <?php echo ${"result".$vendor6.$Order[$i]}['Type_Speed']?>
+              </div>
+                <div class="col-md-3 text-center">
+                  <a href="tel:<?php echo ${"result".$vendor6.$Order[$i]}['Number']?>" class="btn btn-md bt<?php echo $resultvendor6['Type_Vendor_Color'];?>bg whitetext"><?php echo ${"result".$vendor6.$Order[$i]}['Number']?></a>
+                </div>
+                <div class="col-sm-2 text-center">
+                  &nbsp;&nbsp;&nbsp;<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample<?php echo ${"result".$vendor6.$Order[$i]}['ID']?>" aria-expanded="false" aria-controls="collapseExample<?php echo ${"result".$vendor6.$Order[$i]}['ID']?>">รูปภาพ</button>
                 </div>
 
                 <div class="col-md-12 item-center">

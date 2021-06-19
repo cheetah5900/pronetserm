@@ -5,8 +5,8 @@
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
 @font-face {
-      font-family: ThaiSansNeue;
-      src: url(fonts/ThaiSansNeue-Bold.ttf);
+      font-family: Prompt-Light;
+      src: url(fonts/Prompt-Light.ttf);
     }
     @font-face {
       font-family: Prompt;
@@ -31,9 +31,10 @@
       .divcontent{padding:20px;}
       .biggerfont{font-size:100px;}
       .col-md-6{padding: 0;}
+      span.bold{font-weight:800;}
 
 
-      a,body{font-family: ThaiSansNeue;font-size:24px;color:#000000;}
+      a,body{font-family: Prompt-Light;font-size:20px;color:#000000;}
       html, body {width: auto!important; overflow-x: hidden!important} 
 
       dd { 
@@ -155,7 +156,7 @@
       transition: all 0.3s;
       -webkit-transition: all 0.3s;
     }
-
+.col-md-2{padding:0px}
 /*ปรับขนาดรูปภาพใน collapse*/
 @media only screen and (min-width: 1201px){
   .imgcollapse{width:600px;border:black 1px solid;}
@@ -167,12 +168,22 @@
   .item-center {border-left: 1px solid gray;}
   .row,.rowforins {margin: 0 25%;}
   .rowforchoosesim {margin: 0 10%;}
-  .promotion-fullwhite {margin: 3% 25%;}
+  .promotion-fullwhite {margin: 1% 25%;}
 /* ตัวหนังสือใหญ่สำหรับสั่งซื้อซิมเท่านั้น*/
 .whitetextsim{color:#ffffff;font-weight: bold;font-size:120px;}
 .msgicon{width: 150px;}
 /*ปรับขนาดรูปซิมหน้าแรก*/
 .nav-sim-image {height: 100px;}
+.whitetext{font-size:12px;}
+
+body{font-size:18px;}
+button.btn{font-size:12px;padding:5px;}
+.greentext{color:#4f7212;;font-weight: bold;font-size:18px;}
+.redtext{color:#d62128;font-weight: bold;font-size:18px;}
+.bluetext{color:#3366CC;font-weight: bold;font-size:18px;}
+.col-md-1{max-width: 10%;padding:0px;}
+.col-md-2{max-width: 15%;}
+
 }
 @media only screen and (max-width: 1200px) and (min-width: 993px){
   .imgcollapse{width:600px;border:black 1px solid;}
@@ -186,10 +197,18 @@
 .whitetextsim{color:#ffffff;font-weight: bold;font-size:100px;}
 
 .textforsale{font-size:22px;}
-.col-md-6{max-width: 100%;}
+
 .msgicon{width: 100px;}
 /*ปรับขนาดรูปซิมหน้าแรก*/
       .nav-sim-image {height: 100px;}
+      
+body{font-size:18px;}
+button.btn{font-size:16px;padding:5px;}
+.greentext{color:#4f7212;;font-weight: bold;font-size:18px;}
+.redtext{color:#d62128;font-weight: bold;font-size:18px;}
+.bluetext{color:#3366CC;font-weight: bold;font-size:18px;}
+.col-md-1{max-width: 10%;padding:0px;}
+.col-md-2{max-width: 15%;}
 }
 
 
@@ -207,10 +226,18 @@
 
 .divcontent{padding:20px;}
 .biggerfont{font-size:80px;}
-.col-md-6{max-width: 100%;}
+
 .msgicon{width: 80px;}
 /*ปรับขนาดรูปซิมหน้าแรก*/
       .nav-sim-image {height: 100px;}
+      
+body{font-size:18px;}
+button.btn{font-size:16px;padding:5px;}
+.greentext{color:#4f7212;;font-weight: bold;font-size:18px;}
+.redtext{color:#d62128;font-weight: bold;font-size:18px;}
+.bluetext{color:#3366CC;font-weight: bold;font-size:18px;}
+.col-md-1{max-width: 10%;padding:0px;}
+.col-md-2{max-width: 15%;}
 }
 
 
@@ -220,8 +247,6 @@
   .imgsim{width:500px;}
   .imgsalepage{width:600px;}
   .imgsimmodel2{width:200px;}
-  .col-sm-6{width:50%;}
-  .redline,.greenline,.blueline{visibility: hidden;}
   /* ตัวหนังสือใหญ่สำหรับสั่งซื้อซิมเท่านั้น*/
 .whitetextsim{color:#ffffff;font-weight: bold;font-size:60px;}
 
@@ -231,31 +256,55 @@ p{font-family: Prompt;font-size:22px;color:#000000;}
 .textforsale{font-size:24px;}
 .divcontent{padding:20px;}
 .biggerfont{font-size:60px;}
-.col-md-6{max-width: 100%;}
+.col-md-1{max-width: 10%;}
+.col-md-2{max-width: 15%;}
 .msgicon{width: 70px;}
 /*ปรับขนาดรูปซิมหน้าแรก*/
       .nav-sim-image {height: 100px;}
+      
+.whitetext{font-size:10px;}
+body{font-size:16px;}
+button.btn{font-size:14px;padding:5px;}
+.greentext{color:#4f7212;;font-weight: bold;font-size:18px;}
+.redtext{color:#d62128;font-weight: bold;font-size:18px;}
+.bluetext{color:#3366CC;font-weight: bold;font-size:18px;}
+.col-md-1{max-width: 10%;padding:0px;}
+.col-md-2{max-width: 15%;}
+.col-md-3{max-width: 23%;}
 
 }
 @media only screen and (max-width: 600px){
   .imgcollapse{width:300px;border:black 1px solid;}
   .imgsimmodel{width:150px;}
   .imgsimmodel2{width:130px;}
+  a,body{font-size:15px;}
+  .whitetext{font-size:14px;}
   .imgsim{width:400px;}
   .imgsalepage{width:400px;}
-  .col-sm-4{width:33.3%;}
-  .col-sm-6{width:50%;}
-  .redline,.greenline,.blueline{visibility: visible;}
+  .col-md-1{max-width: 10%;}
+  .col-md-2{max-width: 15%;}
+  .btn{padding:.1rem .75rem}
   /* ตัวหนังสือใหญ่สำหรับสั่งซื้อซิมเท่านั้น*/
-.whitetextsim{color:#ffffff;font-weight: bold;font-size:40px;}
 
 h1{font-family: Prompt;font-size:26px;color:#000000;}
 h2{font-family: Prompt-italic;font-size:24px;color:#000000;}
 p{font-family: Prompt;font-size:18px;color:#000000;}
 .textforsale{font-size:20px;}
 .biggerfont{font-size:42px;}
-.col-md-6{max-width: 100%;}
 .msgicon{width: 50px;}
 /*ปรับขนาดรูปซิมหน้าแรก*/
       .nav-sim-image {height: 50px;}
+
+      .whitetext{font-size:14px;}
+      .remarktype{font-size:12px;}
+      body{font-size:12px;}
+      button.btn{font-size:14px;padding:5px;}
+      .greentext{color:#4f7212;;font-weight: bold;font-size:12px;}
+      .redtext{color:#d62128;font-weight: bold;font-size:12px;}
+      .bluetext{color:#3366CC;font-weight: bold;font-size:12px;}
+      .col-md-1{max-width: 20%;padding:0px;}
+      .col-md-2{max-width: 20%;}
+      .col-lg-2{max-width: 40%;padding:0px}
+      .col-sm-2{max-width: 40%;padding:10px 0px}
+      .col-md-3{max-width: 60%;padding:10px 0px}
 }

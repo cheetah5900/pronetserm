@@ -1,10 +1,4 @@
 <?php
-//1. เชื่อมต่อ database: 
-$serverName = "localhost";
-$userName = "root";
-$userPassword = "";
-$dbName = "pronetserm";
-$conn = mysqli_connect($serverName,$userName,$userPassword,$dbName);
 
 //2. query ข้อมูลจากตาราง: 
 $sqlTrue1_1 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายวัน'";

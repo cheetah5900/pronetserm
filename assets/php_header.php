@@ -1,34 +1,35 @@
 <?php
+
 //2. query ข้อมูลจากตาราง: 
 $sqlTrue1_1 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายวัน'";
-$sqlTrue1_2 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Customer = 'ลูกค้าใหม่'";
-$sqlTrue1_3 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายปี'";
-$sqlTrue2_1 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายวัน'";
-$sqlTrue2_2 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายเดือน'";
-$sqlTrue2_3 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายปี'";
-$sqlTrue3_1 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายวัน'";
-$sqlTrue3_2 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายเดือน'";
-$sqlTrue3_3 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายปี'";
+$sqlTrue1_2 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Customer = 'ลูกค้าใหม่' AND Type_Date = 'รายเดือน'";
+$sqlTrue1_3 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายปี'";
+$sqlTrue2_1 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายวัน'";
+$sqlTrue2_2 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายเดือน'";
+$sqlTrue2_3 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายปี'";
+$sqlTrue3_1 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายวัน'";
+$sqlTrue3_2 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายเดือน'";
+$sqlTrue3_3 = "SELECT * FROM detail WHERE Type_Vendor = 'True' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายปี'";
 
 $sqlAis1_1 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายวัน'";
-$sqlAis1_2 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Customer = 'ลูกค้าใหม่'";
-$sqlAis1_3 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายปี'";
-$sqlAis2_1 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายวัน'";
-$sqlAis2_2 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายเดือน'";
-$sqlAis2_3 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายปี'";
-$sqlAis3_1 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายวัน'";
-$sqlAis3_2 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายเดือน'";
-$sqlAis3_3 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายปี'";
+$sqlAis1_2 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Customer = 'ลูกค้าใหม่' AND Type_Date = 'รายเดือน'";
+$sqlAis1_3 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายปี'";
+$sqlAis2_1 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายวัน'";
+$sqlAis2_2 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายเดือน'";
+$sqlAis2_3 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายปี'";
+$sqlAis3_1 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายวัน'";
+$sqlAis3_2 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายเดือน'";
+$sqlAis3_3 = "SELECT * FROM detail WHERE Type_Vendor = 'Ais' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายปี'";
 
 $sqlDtac1_1 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายวัน'";
-$sqlDtac1_2 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Customer = 'ลูกค้าใหม่'";
-$sqlDtac1_3 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายปี'";
-$sqlDtac2_1 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายวัน'";
-$sqlDtac2_2 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายเดือน'";
-$sqlDtac2_3 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายปี'";
-$sqlDtac3_1 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายวัน'";
-$sqlDtac3_2 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายเดือน'";
-$sqlDtac3_3 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Customer = 'ลูกค้าเก่า' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายปี'";
+$sqlDtac1_2 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Customer = 'ลูกค้าใหม่' AND Type_Date = 'รายเดือน'";
+$sqlDtac1_3 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายปี'";
+$sqlDtac2_1 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายวัน'";
+$sqlDtac2_2 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายเดือน'";
+$sqlDtac2_3 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Speed = 'ไม่อั้น ไม่ลดสปีด' AND Type_Date = 'รายปี'";
+$sqlDtac3_1 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายวัน'";
+$sqlDtac3_2 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายเดือน'";
+$sqlDtac3_3 = "SELECT * FROM detail WHERE Type_Vendor = 'Dtac' AND Type_Speed = 'ไม่ลดสปีด + โทรฟรีในเครือข่าย' AND Type_Date = 'รายปี'";
 
 $sqlvendor = "SELECT * FROM loopvendor"; 
 
