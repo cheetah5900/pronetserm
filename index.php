@@ -1,6 +1,6 @@
 <html>
 <?php 
-  include 'assets/header.php';
+  include './assets/header.php';
   include './assets/connection.php';
   include './assets/php_header.php';
 ?>
@@ -38,7 +38,7 @@ Section 1.1 : Instruction
 -->
 
 <div class="rowforins blacktext" style="background-color: #ffcccc;padding: 10px 10px;">
-<a target="_blank" href="https://www.pronetserm.com/sim/unlimitedsim"><div class="text-center"><img class="nav-sim-image" src="img/logo_app_Sim.png"> เปิดซิมใหม่ เดือนละ 150 บาท กดเลย !</div></a>
+<a target="_blank" href="<?php echo $folder;?>sim/simlnw"><div class="text-center"><img class="nav-sim-image" src="img/logo_app_Sim.png"> ซิมเทพธอร์ จ่ายครั้งเดียว ใช้ยาวทั้งปี กดเลย !</div></a>
 </div>
 <!--แถบยาวเลือกประเภท-->
         <?php 
@@ -49,7 +49,7 @@ Section 1.1 : Instruction
         ?>
         <?php 
         ?>
-          <div class="rowforins <?php echo $vendor2_2;?>Ins whitetext" id="Instruc<?php echo $vendor2;?>1">
+          <div class="rowforins <?php echo $vendor2_2;?>Ins whitetexthead" id="Instruc<?php echo $vendor2;?>1">
           <div class="text-center">1. เลือกประเภท</div>
           </div>
        <?php 
@@ -101,7 +101,7 @@ Section 1.4 : Instruction
 ?>
 <?php 
     ?>
-      <div class="rowforins <?php echo $vendor4_2;?>Ins whitetext" id="Instruc<?php echo $vendor4;?>2">
+      <div class="rowforins <?php echo $vendor4_2;?>Ins whitetexthead" id="Instruc<?php echo $vendor4;?>2">
        <div class="text-center">2. เลือกจำนวนวัน
        </div>
       </div>

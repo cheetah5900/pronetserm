@@ -16,7 +16,7 @@
     <div class="row whitebox">
               <div class="col-sm-12" style="background-color:#ffc9d3;">
                 <div class="text-center">
-                  <a target="_blank" href="https://www.pronetserm.com/unlimitedsim"><img class="imgsimmodel effectfront" src="../pronetimg/True/newsim/20.png"></a>
+                  <a target="_blank" href="<?php echo $folder; ?>unlimitedsim"><img class="imgsimmodel effectfront" src="../pronetimg/True/newsim/20.png"></a>
                 </div>
                 <br><br><br><br><br><br><br>
               </div>
