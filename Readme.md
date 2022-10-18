@@ -39,7 +39,14 @@ I want to do some SEO but I have no any knowledge of SEO in that time. Nowadays 
 10. Set *Character set of the file* to `utf-8`
 11. Go to bottom of page, then click *Import* button
 
-### Step 4 : Open web app
+### Step 4 : Set up database config in project file
+1. Open project folder.
+2. Go to `assets/Connection/For Local/connection.php`
+3. edit *$userName* variable to your PHPMyAdmin username (default is 'root')
+4. edit *$userPassword* variable to your PHPMyAdmin password (default is empty)
+5. save file
+
+### Step 5 : Open web app
 1. Open new tab browser
 2. Go to `localhost/pronetserm`
 3. Done
